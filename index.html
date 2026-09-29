@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plantas de nuestros antepasados - Comprensión lectora</title>
+  <style>
+:root{--bg1:#fff7d6;--bg2:#d8f4ff;--ink:#24304a;--card:#fff;--primary:#ff7a59;--primary-dark:#d95236;--accent:#4d96ff;--accent-dark:#2762b9;--good:#28a745;--bad:#e63946;--soft-good:#e9fff0;--soft-bad:#fff0f2;--yellow:#ffd166;--purple:#8e7dff;--shadow:0 16px 35px rgba(36,48,74,.18);--radius:26px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at top left,rgba(255,209,102,.65),transparent 32%),radial-gradient(circle at 80% 15%,rgba(142,125,255,.22),transparent 30%),linear-gradient(135deg,var(--bg1),var(--bg2));overflow-x:hidden}button{font:inherit}.app{width:min(1120px,94vw);margin:0 auto;padding:22px 0 36px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:18px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:12px}.brand-icon{width:60px;height:60px;display:grid;place-items:center;border-radius:20px;background:linear-gradient(135deg,#ff7a59,#ffd166);box-shadow:var(--shadow);font-size:34px;transform:rotate(-5deg)}h1{margin:0;font-size:clamp(1.8rem,4vw,3rem);line-height:1;color:#1d2951}.subtitle{margin:6px 0 0;font-size:clamp(.95rem,2vw,1.1rem)}.status-pill{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;background:rgba(255,255,255,.82);border:3px solid rgba(255,255,255,.95);border-radius:999px;box-shadow:0 10px 20px rgba(36,48,74,.12);font-weight:800}.panel{background:rgba(255,255,255,.9);border:4px solid rgba(255,255,255,.9);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;position:relative}.screen{display:none;padding:clamp(18px,4vw,34px);min-height:650px}.screen.active{display:block;animation:popIn .35s ease}@keyframes popIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}.hero{display:grid;grid-template-columns:1fr minmax(240px,380px);gap:28px;align-items:center}.hero-card{background:linear-gradient(135deg,#fff,#eff9ff);border:3px solid #fff;border-radius:28px;padding:26px;box-shadow:0 12px 25px rgba(36,48,74,.12)}.hero h2,.learn h2,.quiz h2,.result h2{margin:0 0 12px;font-size:clamp(1.7rem,4vw,2.7rem);color:#1d2951}.hero p,.learn p,.quiz p,.result p{font-size:clamp(1.03rem,2.2vw,1.25rem);line-height:1.5}.mascot{min-height:360px;display:grid;place-items:center;border-radius:32px;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.95),transparent 22%),linear-gradient(160deg,#c6f7e2,#b7dcff);position:relative;overflow:hidden;border:4px dashed rgba(77,150,255,.4)}.mascot .emoji{font-size:clamp(8rem,19vw,13rem);filter:drop-shadow(0 12px 10px rgba(36,48,74,.2));animation:float 2.8s ease-in-out infinite}.mascot:before,.mascot:after{content:"★";position:absolute;font-size:3rem;color:#fff;text-shadow:0 8px 12px rgba(36,48,74,.12);animation:twinkle 2s ease-in-out infinite}.mascot:before{top:34px;left:42px}.mascot:after{right:38px;bottom:46px;animation-delay:.5s}@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(3deg)}}@keyframes twinkle{0%,100%{transform:scale(.9);opacity:.6}50%{transform:scale(1.25);opacity:1}}.btn-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:22px}.btn{border:0;cursor:pointer;border-radius:999px;padding:14px 22px;font-weight:900;font-size:1.05rem;color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-dark));box-shadow:0 9px 0 #b63b27,0 16px 22px rgba(217,82,54,.24);transform:translateY(0);transition:transform .12s ease,box-shadow .12s ease,filter .2s ease;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:hover{filter:brightness(1.04)}.btn:active{transform:translateY(5px);box-shadow:0 4px 0 #b63b27,0 8px 18px rgba(217,82,54,.24)}.btn.secondary{background:linear-gradient(135deg,var(--accent),var(--accent-dark));box-shadow:0 9px 0 #184b96,0 16px 22px rgba(39,98,185,.24)}.btn.secondary:active{box-shadow:0 4px 0 #184b96,0 8px 18px rgba(39,98,185,.24)}.btn.light{color:var(--ink);background:#fff;border:3px solid #dde8ff;box-shadow:0 7px 0 #bccaf0,0 14px 18px rgba(36,48,74,.1)}.btn.light:active{box-shadow:0 3px 0 #bccaf0,0 8px 14px rgba(36,48,74,.1)}.btn:disabled{cursor:not-allowed;opacity:.55;filter:grayscale(.2)}.progress-wrap{display:grid;gap:12px;margin-bottom:20px}.progress-top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;font-weight:900}.vowel-steps{display:flex;gap:10px;flex-wrap:wrap}.vowel-step{width:48px;height:48px;display:grid;place-items:center;border-radius:16px;background:#fff;border:3px solid #dde8ff;font-size:1.45rem;font-weight:1000;color:#7a86a8;box-shadow:0 8px 16px rgba(36,48,74,.1)}.vowel-step.active{background:var(--yellow);color:#7c4a00;border-color:#ffe59a;transform:scale(1.05)}.vowel-step.done{background:#dfffe8;color:#157b37;border-color:#a9efbd}.meter{width:100%;height:18px;border-radius:999px;background:#e8eefc;overflow:hidden;border:3px solid #fff;box-shadow:inset 0 2px 8px rgba(36,48,74,.08)}.meter span{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,#5fd068,#4d96ff,#8e7dff);transition:width .35s ease}.learn{display:grid;gap:20px}.big-vowel{display:grid;grid-template-columns:180px 1fr;gap:22px;align-items:center;padding:22px;border-radius:28px;background:linear-gradient(135deg,#fff2c2,#fff);border:4px solid #fff}.letter-badge{width:170px;height:170px;border-radius:40px;display:grid;place-items:center;font-size:7.3rem;line-height:1;font-weight:1000;color:#fff;background:linear-gradient(135deg,var(--primary),var(--purple));box-shadow:0 14px 25px rgba(36,48,74,.18);text-transform:uppercase;text-shadow:0 6px 0 rgba(0,0,0,.12)}.words-grid{display:grid;grid-template-columns:repeat(5,minmax(130px,1fr));gap:14px}.word-card,.answer-card{background:var(--card);border:4px solid #eef3ff;border-radius:22px;padding:16px 12px;text-align:center;box-shadow:0 10px 18px rgba(36,48,74,.1);transition:transform .16s ease,border-color .16s ease,background .16s ease}.word-card{cursor:pointer}.word-card:hover,.answer-card:hover{transform:translateY(-4px);border-color:#abd3ff}.word-emoji{font-size:3rem;display:block;margin-bottom:8px}.word-text{font-size:1.18rem;font-weight:1000;display:block}.first-letter{color:var(--primary-dark);font-size:1.35em;text-transform:uppercase}.quiz-card{display:grid;gap:18px;border-radius:30px;background:linear-gradient(135deg,#fff,#f4fbff);padding:clamp(16px,3vw,28px);border:4px solid #fff}.question-box{display:grid;grid-template-columns:130px 1fr;gap:18px;align-items:center;padding:18px;border-radius:26px;background:#fff8df;border:3px dashed #f2c556}.question-mark{width:120px;height:120px;display:grid;place-items:center;border-radius:35px;background:#fff;font-size:4.8rem;box-shadow:0 12px 20px rgba(36,48,74,.1)}.question-text{margin:0;font-size:clamp(1.25rem,2.8vw,2rem);line-height:1.25;font-weight:1000}.target-vowel{color:var(--primary-dark);background:#fff;border-radius:18px;padding:4px 12px;display:inline-block;text-transform:uppercase;box-shadow:0 6px 12px rgba(36,48,74,.1)}.answers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.answer-card{min-height:170px;cursor:pointer;color:var(--ink);position:relative}.answer-card.correct{background:var(--soft-good);border-color:#83e5a1;animation:correctPulse .35s ease}.answer-card.wrong{background:var(--soft-bad);border-color:#ff9ba5;animation:shake .34s ease}@keyframes correctPulse{50%{transform:scale(1.04)}}@keyframes shake{20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}.feedback{min-height:86px;border-radius:24px;padding:16px 18px;display:flex;align-items:center;gap:12px;font-size:1.18rem;font-weight:900;background:#eef7ff;border:3px solid #d8ebff}.feedback.good{color:#176b32;background:var(--soft-good);border-color:#9fe9b5}.feedback.bad{color:#9f1e2a;background:var(--soft-bad);border-color:#ffb0b8}.mini-tip{margin:0;padding:14px 16px;border-radius:18px;background:#f6f1ff;border:3px solid #e0d7ff;font-weight:800;line-height:1.35}.level-complete{text-align:center;display:grid;gap:16px;place-items:center}.trophy{font-size:clamp(5rem,17vw,11rem);animation:float 2.6s ease-in-out infinite}.score-board{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}.score-item{padding:18px;border-radius:22px;text-align:center;background:#fff;border:3px solid #eef3ff;box-shadow:0 10px 18px rgba(36,48,74,.08)}.score-number{display:block;font-size:2.2rem;font-weight:1000;color:var(--accent-dark)}.stars{font-size:clamp(2.2rem,7vw,4rem);letter-spacing:4px;margin:8px 0 14px;text-shadow:0 8px 10px rgba(36,48,74,.12)}.certificate{border-radius:26px;background:linear-gradient(135deg,#fff7d6,#fff);border:4px dashed #ffd166;padding:22px;margin:20px 0;text-align:center}.confetti{pointer-events:none;position:fixed;inset:0;overflow:hidden;z-index:10;display:none}.confetti.show{display:block}.confetti span{position:absolute;top:-40px;width:14px;height:22px;border-radius:6px;background:var(--primary);animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}.footer-note{text-align:center;font-size:.95rem;color:#52607f;margin-top:14px;font-weight:700}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:850px){.hero{grid-template-columns:1fr}.mascot{min-height:230px}.big-vowel{grid-template-columns:1fr;text-align:center}.letter-badge{margin:0 auto}.words-grid{grid-template-columns:repeat(2,1fr)}.answers-grid{grid-template-columns:1fr}.question-box{grid-template-columns:1fr;text-align:center}.question-mark{margin:0 auto}.score-board{grid-template-columns:1fr}}@media(max-width:450px){.screen{min-height:auto}.words-grid{grid-template-columns:1fr}.btn{width:100%}.topbar{justify-content:center;text-align:center}.status-pill{width:100%;justify-content:center}}
+.answers-grid.text-answers{grid-template-columns:1fr}.answer-card.text-option{min-height:auto;display:flex;align-items:center;gap:14px;text-align:left;padding:16px 18px}.opt-num{flex:0 0 42px;height:42px;border-radius:14px;display:grid;place-items:center;background:#eef3ff;font-weight:1000;color:var(--accent-dark);font-size:1.2rem}.opt-text{font-size:clamp(1.02rem,2.2vw,1.22rem);font-weight:800;line-height:1.3}.question-text.small{font-size:clamp(1.15rem,2.5vw,1.6rem)}
+.field{display:grid;gap:6px;margin:12px 0;font-weight:900}.field input,.field select{font:inherit;font-size:1.1rem;padding:12px 16px;border-radius:16px;border:3px solid #dde8ff;background:#fff;color:var(--ink);width:100%}.field input:focus,.field select:focus{outline:none;border-color:var(--accent)}.field-row{display:grid;grid-template-columns:2fr 1fr;gap:12px}.form-error{color:var(--bad);font-weight:900;min-height:1.4em;margin:4px 0 0}
+.link-btn{background:none;border:0;color:var(--accent-dark);font-weight:900;text-decoration:underline;cursor:pointer;padding:6px 0}
+.level-badge{width:170px;height:170px;border-radius:40px;display:grid;place-items:center;font-size:6rem;background:linear-gradient(135deg,var(--primary),var(--purple));box-shadow:0 14px 25px rgba(36,48,74,.18)}
+.step-chip{width:auto;min-width:48px;padding:0 12px;font-size:1rem}
+.logro{display:inline-block;padding:6px 14px;border-radius:999px;font-weight:1000;background:#fff;border:3px solid #dde8ff}.logro.AD{background:#dfffe8;border-color:#83e5a1;color:#157b37}.logro.A{background:#e6f1ff;border-color:#9cc6ff;color:#1f5aa8}.logro.B{background:#fff6d9;border-color:#ffd166;color:#8a5a00}.logro.C{background:#fff0f2;border-color:#ffb0b8;color:#9f1e2a}
+.summary-box{white-space:pre-wrap;text-align:left;background:#fff;border:3px dashed #bcd6ff;border-radius:20px;padding:18px;font-size:1.02rem;line-height:1.5;font-family:inherit;margin:0}
+.save-status{font-weight:900;padding:10px 14px;border-radius:14px;background:#eef7ff;border:2px solid #d8ebff}.save-status.ok{background:var(--soft-good);border-color:#9fe9b5;color:#176b32}.save-status.warn{background:#fff6d9;border-color:#ffd166;color:#8a5a00}
+.table-wrap{overflow-x:auto;border-radius:18px;border:3px solid #eef3ff;background:#fff;margin-top:14px}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{padding:10px 12px;border-bottom:1px solid #eef3ff;text-align:left;white-space:nowrap}th{background:#f4f8ff;font-weight:1000;position:sticky;top:0}
+.qbar{display:grid;grid-template-columns:minmax(0,1fr) 120px 52px;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid #eef3ff;font-weight:700}.qbar .bar{height:14px;border-radius:999px;background:#e8eefc;overflow:hidden}.qbar .bar span{display:block;height:100%;background:linear-gradient(90deg,#5fd068,#4d96ff)}
+.teacher-tools{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}.teacher-tools .field{margin:0;min-width:180px;flex:1}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+@media(max-width:850px){.stat-grid{grid-template-columns:repeat(2,1fr)}.field-row{grid-template-columns:1fr}.qbar{grid-template-columns:1fr 70px 44px}}
+@media print{body{background:#fff}.topbar .status-pill,.btn-row,.footer-note,.no-print{display:none!important}.panel{box-shadow:none;border:0}.screen{min-height:auto}}
+  </style>
+</head>
+<body>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><div class="brand-icon" aria-hidden="true">🌱</div><div><h1>Plantas de nuestros antepasados</h1><p class="subtitle">Juego de comprensión lectora</p></div></div>
+      <div class="status-pill" aria-label="Puntaje actual">⭐ Puntaje: <span id="scoreTop">0</span></div>
+    </header>
+    <section class="panel" aria-live="polite">
+
+      <!-- INICIO -->
+      <section id="startScreen" class="screen active"><div class="hero"><div class="hero-card">
+        <h2>¡Hola, gran investigador!</h2>
+        <p>Ya leíste la ficha informativa <strong>“Plantas que utilizaban nuestros antepasados”</strong>. Ahora demuestra cuánto comprendiste en tres niveles: <strong>literal</strong>, <strong>inferencial</strong> y <strong>crítico</strong>.</p>
+        <div class="field-row">
+          <label class="field">Tu nombre y apellido<input id="studentName" autocomplete="name" maxlength="60" placeholder="Ej.: Ana Quispe" /></label>
+          <label class="field">Grado y sección<input id="studentSection" maxlength="10" placeholder="Ej.: 4C" /></label>
+        </div>
+        <p class="form-error" id="formError" role="alert"></p>
+        <div class="btn-row"><button class="btn" id="startBtn">▶ Empezar juego</button><button class="btn secondary" id="voiceTestBtn">🔊 Probar voz</button></div>
+        <p class="mini-tip">Piensa bien antes de responder: solo cuenta tu <strong>primer intento</strong>. Si te equivocas, verás una pista para aprender.</p>
+        <button class="link-btn no-print" id="teacherLink">👩‍🏫 Panel del docente</button>
+      </div><div class="mascot" aria-hidden="true"><div class="emoji">🌽</div></div></div></section>
+
+      <!-- INTRO DE NIVEL -->
+      <section id="learnScreen" class="screen"><div class="progress-wrap"><div class="progress-top"><div class="vowel-steps" id="levelSteps"></div><span id="learnProgressText">Nivel 1 de 3</span></div><div class="meter" aria-hidden="true"><span id="mainMeter"></span></div></div>
+        <div class="learn"><div class="big-vowel"><div class="level-badge" id="levelBadge" aria-hidden="true">📖</div><div><h2 id="learnTitle">Nivel literal</h2><p id="learnIntro"></p><div class="btn-row"><button class="btn secondary" id="listenLevelBtn">🔊 Escuchar</button><button class="btn" id="goQuizBtn">🎮 Responder preguntas</button></div></div></div>
+        <p class="mini-tip" id="learningTip"></p></div></section>
+
+      <!-- PREGUNTAS -->
+      <section id="quizScreen" class="screen"><div class="progress-wrap"><div class="progress-top"><div class="vowel-steps" id="quizLevelSteps"></div><span id="roundProgressText">Pregunta 1</span></div><div class="meter" aria-hidden="true"><span id="quizMeter"></span></div></div>
+        <div class="quiz"><div class="quiz-card"><div class="question-box"><div class="question-mark" id="questionIcon" aria-hidden="true">🔎</div><p class="question-text small" id="questionText"></p></div>
+        <div class="answers-grid text-answers" id="answersGrid"></div>
+        <div id="feedback" class="feedback"><span aria-hidden="true">💡</span><span>Elige una respuesta.</span></div>
+        <div class="btn-row"><button class="btn secondary" id="repeatQuestionBtn">🔊 Escuchar pregunta</button><button class="btn hidden" id="nextQuestionBtn">➡ Continuar</button></div></div></div></section>
+
+      <!-- FIN DE NIVEL -->
+      <section id="levelCompleteScreen" class="screen"><div class="level-complete"><div class="trophy" aria-hidden="true">🏅</div><h2 id="levelCompleteTitle">¡Nivel superado!</h2><p id="levelCompleteText"></p>
+        <div class="score-board"><div class="score-item"><span class="score-number" id="levelScoreNumber">0</span>puntos del nivel</div><div class="score-item"><span class="score-number" id="levelGoodNumber">0</span>correctas al primer intento</div><div class="score-item"><span class="score-number" id="totalScoreNumber">0</span>puntos totales</div></div>
+        <p class="mini-tip" id="nextLevelTip"></p><div class="btn-row"><button class="btn" id="nextLevelBtn">➡ Siguiente nivel</button></div></div></section>
+
+      <!-- RESULTADO + RESUMEN PARA PAPÁS -->
+      <section id="resultScreen" class="screen"><div class="result">
+        <div class="certificate"><div class="trophy" aria-hidden="true">🎉</div><h2 id="resultTitle">¡Terminaste!</h2><div class="stars" id="starsText">⭐⭐⭐</div><p><span class="logro" id="logroBadge">A</span></p><p id="finalMessage"></p></div>
+        <div class="score-board"><div class="score-item"><span class="score-number" id="lvl0">0</span>Literal</div><div class="score-item"><span class="score-number" id="lvl1">0</span>Inferencial</div><div class="score-item"><span class="score-number" id="lvl2">0</span>Crítico</div></div>
+        <h2 style="font-size:1.5rem">📨 Resumen para la familia</h2>
+        <pre class="summary-box" id="summaryBox"></pre>
+        <p class="save-status" id="saveStatus">Guardando resultado…</p>
+        <div class="btn-row"><button class="btn" id="whatsappBtn">📲 Enviar por WhatsApp</button><button class="btn secondary" id="copyBtn">📋 Copiar resumen</button><button class="btn light" id="printBtn">🖨 Imprimir</button><button class="btn light" id="restartBtn">🔁 Nuevo estudiante</button></div>
+      </div></section>
+
+      <!-- PANEL DOCENTE -->
+      <section id="teacherScreen" class="screen"><div class="result">
+        <h2>👩‍🏫 Resultados del aula</h2>
+        <p id="teacherIntro">Escribe la clave del docente para ver los resultados guardados.</p>
+        <div class="teacher-tools">
+          <label class="field">Clave del docente<input id="teacherKey" type="password" autocomplete="off" /></label>
+          <label class="field">Filtrar por sección<select id="sectionFilter"><option value="">Todas</option></select></label>
+          <button class="btn secondary" id="loadResultsBtn">🔄 Ver resultados</button>
+        </div>
+        <p class="form-error" id="teacherError" role="alert"></p>
+        <div id="teacherContent" class="hidden">
+          <div class="stat-grid"><div class="score-item"><span class="score-number" id="stCount">0</span>estudiantes</div><div class="score-item"><span class="score-number" id="stAvg">0%</span>promedio</div><div class="score-item"><span class="score-number" id="stLogro">0</span>en logro (A/AD)</div><div class="score-item"><span class="score-number" id="stWeak">-</span>nivel más difícil</div></div>
+          <h3>Preguntas con más errores</h3><div id="questionStats"></div>
+          <div class="table-wrap"><table><thead><tr><th>Fecha</th><th>Estudiante</th><th>Sección</th><th>Puntaje</th><th>Logro</th><th>Literal</th><th>Inferencial</th><th>Crítico</th></tr></thead><tbody id="resultsBody"></tbody></table></div>
+          <div class="btn-row"><button class="btn" id="csvBtn">⬇ Descargar Excel (CSV)</button><button class="btn light" id="copyClassBtn">📋 Copiar resumen del aula</button></div>
+        </div>
+        <div class="btn-row"><button class="btn light" id="backHomeBtn">⬅ Volver al inicio</button></div>
+      </div></section>
+    </section>
+    <p class="footer-note">Lectura: Anexo 4 – Ficha informativa “Plantas que utilizaban nuestros antepasados”.</p>
+  </main>
+  <span id="liveRegion" class="sr-only" aria-live="assertive"></span>
+  <script>
+    /* =========================================================
+       CONFIGURACIÓN — pega aquí la URL de tu Apps Script (termina en /exec).
+       Si queda vacía, el resultado solo se guarda en este dispositivo.
+       ========================================================= */
+    const CONFIG={SCRIPT_URL:"",LECTURA:"Plantas de nuestros antepasados",FUENTE:"Ficha informativa – Anexo 4",ID:"plantas"};
+
+    /* Contenido: en cada pregunta la opción [0] es la correcta (se barajan al mostrarse). */
+    const levels=[
+      {key:"literal",short:"Literal",badge:"📖",title:"Nivel literal",intro:"Las respuestas están escritas en la ficha. Recuerda qué dice sobre cada planta: la papa, el maíz, la quinua, el algodón, la muña, el achiote y la uña de gato.",tip:"Pista: si dudas, vuelve a mirar la ficha. La respuesta está en el texto.",questions:[
+        {q:"¿Qué proceso tradicional permitía conservar la papa durante largos periodos?",emoji:"🥔",options:["La elaboración del chuño","El hilado y el tejido","La preparación de infusiones"],hint:"Aprovecha las bajas temperaturas de las zonas altoandinas y el secado."},
+        {q:"¿Qué evidencia muestra que nuestros antepasados conocían el maíz?",emoji:"🏺",options:["Las cerámicas prehispánicas, como las piezas Moche","Los textiles de algodón","Las hojas secas de muña"],hint:"Busca la pregunta “¿Cómo sabemos que nuestros antepasados conocían el maíz?”."},
+        {q:"¿De qué región es originaria la quinua?",emoji:"🌾",options:["De la región andina","De la Amazonía","De la costa del Perú"],hint:"Lee la primera oración de la parte 3."},
+        {q:"¿Para qué se usaban las fibras del algodón?",emoji:"🧵",options:["Para hacer hilos y fabricar telas, redes y otros objetos","Para preparar sopas y guisos","Para obtener colorante rojo"],hint:"Sus fibras podían convertirse en hilos…"},
+        {q:"¿Cómo se conoce también a la muña?",emoji:"🌿",options:["Como “la menta de los incas”","Como “la fuerza del bosque tropical”","Como “el oro de los Andes”"],hint:"Está entre comillas al inicio de la parte 5."},
+        {q:"¿Qué se obtiene de las semillas del achiote?",emoji:"🔴",options:["Pigmentos de color rojizo, usados como colorante y condimento","Hilos para tejer prendas","Harina para hacer pan"],hint:"Sus frutos tienen semillas de intenso color rojizo."},
+        {q:"¿Por qué la uña de gato tiene ese nombre?",emoji:"🐾",options:["Por unas estructuras curvas parecidas a las uñas de un gato","Porque los gatos comen sus hojas","Porque sus hojas tienen forma de gato"],hint:"Esas estructuras le permiten sujetarse mientras crece."}
+      ]},
+      {key:"inferencial",short:"Inferencial",badge:"🔍",title:"Nivel inferencial",intro:"Ahora piensa como un detective. La respuesta no siempre está escrita: debes deducirla relacionando las ideas de la ficha.",tip:"Pista: busca lo que se repite en todas las plantas: “Antes”, “Ahora” y “Permanencia”.",questions:[
+        {q:"¿Cuál es la idea principal de la ficha?",emoji:"💡",options:["Nuestros antepasados desarrollaron conocimientos sobre las plantas que aún usamos hoy","Cómo se cocina la papa en el chuño","Que las plantas antiguas ya no sirven"],hint:"Relee el primer párrafo, antes de la papa."},
+        {q:"En la ficha, ¿qué significa “Permanencia”?",emoji:"🔁",options:["Algo del pasado que seguimos haciendo o usando hoy","Algo que desapareció hace mucho tiempo","Algo que se inventó recientemente"],hint:"Mira un ejemplo: “Permanencia: seguimos cultivando y consumiendo papa”."},
+        {q:"En el caso del algodón, ¿qué CAMBIÓ con el tiempo?",emoji:"⚙️",options:["Las herramientas y formas de producir, porque ahora también hay procesos industriales","Que ya no usamos algodón para hacer ropa","Que ahora el algodón se usa como alimento"],hint:"Busca la palabra “Cambio” en la parte 4."},
+        {q:"¿Por qué las piezas Moche son importantes para los historiadores?",emoji:"🏺",options:["Porque son fuentes que ayudan a conocer cómo vivían las sociedades del pasado","Porque son adornos modernos","Porque tienen escritas recetas de cocina"],hint:"La ficha las llama “fuentes iconográficas”."},
+        {q:"¿Qué tienen en común la papa, el maíz y la quinua?",emoji:"🍲",options:["Antes eran alimento y hoy los seguimos consumiendo","Todas crecen en el bosque amazónico","Todas se usan para fabricar telas"],hint:"Compara lo que dice “Antes” y “Ahora” en las tres."},
+        {q:"¿Por qué la muña es un buen ejemplo de un saber que pasa de generación en generación?",emoji:"👵",options:["Porque su uso pasa de abuelos a padres y de padres a hijos","Porque solo la conocen los científicos","Porque se descubrió hace poco tiempo"],hint:"Lee lo que dice la ficha sobre los abuelos."}
+      ]},
+      {key:"critico",short:"Crítico",badge:"💭",title:"Nivel crítico",intro:"En este nivel das tu opinión con buenas razones. Piensa en por qué estos saberes son valiosos y en tu propia familia.",tip:"Pista: elige la opción que tenga una buena razón basada en la ficha.",questions:[
+        {q:"¿Por qué es importante valorar los saberes tradicionales de los pueblos andinos y amazónicos?",emoji:"🌳",options:["Porque son conocimientos útiles que forman parte de nuestra identidad y cuidan la biodiversidad","Porque son más modernos que la ciencia","No es importante, porque son cosas del pasado"],hint:"Relee el último párrafo sobre la uña de gato."},
+        {q:"¿Qué acción ayuda a que estos conocimientos no desaparezcan?",emoji:"🗣️",options:["Preguntar a los abuelos cómo usaban las plantas y compartirlo","Olvidar las costumbres de la familia","Cortar las plantas del bosque sin cuidado"],hint:"Piensa en cómo pasó el saber de la muña."},
+        {q:"Si quisieras investigar más sobre la uña de gato, ¿qué fuente sería más confiable?",emoji:"🔎",options:["Una página oficial del Estado, como la de SERNANP citada en la ficha","Lo que dice un anuncio que vende productos milagrosos","Un rumor que escuchaste de un amigo"],hint:"Mira las “Fuentes consultadas” al final de la ficha."},
+        {q:"En tu casa preparan una infusión de muña. ¿Qué nos muestra esa costumbre?",emoji:"🍵",options:["Que un saber de nuestros antepasados sigue vivo en la vida diaria","Que la muña es una planta que llegó hace poco","Que solo se usa en otros países"],hint:"Es un ejemplo de “permanencia”."}
+      ]}
+    ];
+
+    const $=id=>document.getElementById(id);
+    const screens={start:$("startScreen"),learn:$("learnScreen"),quiz:$("quizScreen"),levelComplete:$("levelCompleteScreen"),result:$("resultScreen"),teacher:$("teacherScreen")};
+    const pointsPerCorrect=10,totalQuestions=levels.reduce((s,l)=>s+l.questions.length,0);
+    let student={nombre:"",seccion:""},currentLevel=0,currentRound=0,score=0,levelCorrect=0,levelScore=0,locked=false,firstTry=true,answers=[],levelHits=[0,0,0],startedAt=0,selectedVoice=null,teacherRows=[],lastSummary="";
+
+    /* ---------- utilidades ---------- */
+    function showScreen(name){Object.values(screens).forEach(s=>s.classList.remove("active"));screens[name].classList.add("active");window.scrollTo({top:0,behavior:"smooth"})}
+    function shuffle(a){const c=[...a];for(let i=c.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[c[i],c[j]]=[c[j],c[i]]}return c}
+    function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+    function logroDe(p){if(p>=90)return{code:"AD",label:"Logro destacado"};if(p>=70)return{code:"A",label:"Logro esperado"};if(p>=50)return{code:"B",label:"En proceso"};return{code:"C",label:"En inicio"}}
+    function store(key,val){try{localStorage.setItem(key,JSON.stringify(val))}catch(e){}}
+    function load(key,def){try{const v=localStorage.getItem(key);return v?JSON.parse(v):def}catch(e){return def}}
+
+    /* ---------- voz y sonido (plantilla) ---------- */
+    function getVoice(){const synth=window.speechSynthesis;if(!synth)return null;const voices=synth.getVoices();if(!voices.length)return null;const isSpanish=v=>(v.lang||"").toLowerCase().startsWith("es");const isSpain=v=>{const n=(v.name||"").toLowerCase(),l=(v.lang||"").toLowerCase();return l==="es-es"||n.includes("españa")||n.includes("spain")};const spanish=voices.filter(isSpanish),latin=spanish.filter(v=>!isSpain(v));const preferred=["es-pe","peru","perú","es-419","latino","latin","es-mx","mexico","méxico","es-us","es-co","colombia","es-ar","argentina","es-cl","chile"];for(const key of preferred){const found=latin.find(v=>(v.lang||"").toLowerCase().includes(key)||(v.name||"").toLowerCase().includes(key));if(found)return found}return latin[0]||spanish[0]||voices[0]}
+    function loadVoices(){selectedVoice=getVoice()}if("speechSynthesis"in window){loadVoices();window.speechSynthesis.onvoiceschanged=loadVoices}
+    function speak(text,opt={}){if(!("speechSynthesis"in window))return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="es-PE";u.rate=opt.rate||.9;u.pitch=opt.pitch||1.05;selectedVoice=selectedVoice||getVoice();if(selectedVoice)u.voice=selectedVoice;window.speechSynthesis.speak(u)}
+    function playTone(type="good"){const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;const ctx=new AC(),now=ctx.currentTime,o=ctx.createOscillator(),g=ctx.createGain();o.connect(g);g.connect(ctx.destination);if(type==="good"){o.frequency.setValueAtTime(523.25,now);o.frequency.setValueAtTime(659.25,now+.1);o.frequency.setValueAtTime(783.99,now+.2)}else{o.frequency.setValueAtTime(220,now);o.frequency.setValueAtTime(174.61,now+.12)}o.type="sine";g.gain.setValueAtTime(.001,now);g.gain.exponentialRampToValueAtTime(.16,now+.02);g.gain.exponentialRampToValueAtTime(.001,now+.35);o.start(now);o.stop(now+.38)}
+
+    /* ---------- progreso ---------- */
+    function buildLevelSteps(container){container.innerHTML="";levels.forEach((level,i)=>{const s=document.createElement("div");s.className="vowel-step step-chip";if(i<currentLevel)s.classList.add("done");if(i===currentLevel)s.classList.add("active");s.textContent=level.badge+" "+level.short;container.appendChild(s)})}
+    function updateMainProgress(){const done=levels.slice(0,currentLevel).reduce((s,l)=>s+l.questions.length,0)+currentRound;const p=Math.round(done/totalQuestions*100);$("mainMeter").style.width=p+"%";$("quizMeter").style.width=p+"%";buildLevelSteps($("levelSteps"));buildLevelSteps($("quizLevelSteps"));$("scoreTop").textContent=score}
+
+    /* ---------- flujo del juego ---------- */
+    function renderLearn(){const level=levels[currentLevel];$("learnProgressText").textContent=`Nivel ${currentLevel+1} de ${levels.length}`;$("levelBadge").textContent=level.badge;$("learnTitle").textContent=level.title;$("learnIntro").textContent=level.intro;$("learningTip").textContent=level.tip;updateMainProgress();showScreen("learn");speak(`${level.title}. ${level.intro}`)}
+    function startLevelQuiz(){currentRound=0;levelCorrect=0;levelScore=0;renderQuestion();showScreen("quiz")}
+    function renderQuestion(){const level=levels[currentLevel],item=level.questions[currentRound];locked=false;firstTry=true;$("nextQuestionBtn").classList.add("hidden");$("answersGrid").innerHTML="";$("roundProgressText").textContent=`Pregunta ${currentRound+1} de ${level.questions.length}`;$("questionIcon").textContent=item.emoji;$("questionText").textContent=item.q;$("feedback").className="feedback";$("feedback").innerHTML=`<span aria-hidden="true">💡</span><span>Lee con calma y elige una respuesta.</span>`;
+      shuffle(item.options.map((t,i)=>({text:t,correct:i===0}))).forEach((opt,i)=>{const b=document.createElement("button");b.type="button";b.className="answer-card text-option";b.innerHTML=`<span class="opt-num">${i+1}</span><span class="opt-text">${esc(opt.text)}</span>`;b.addEventListener("click",()=>checkAnswer(b,opt,item));$("answersGrid").appendChild(b)});updateMainProgress();speak(item.q)}
+    function checkAnswer(button,opt,item){if(locked)return;const level=levels[currentLevel];
+      if(opt.correct){locked=true;button.classList.add("correct");if(firstTry){score+=pointsPerCorrect;levelScore+=pointsPerCorrect;levelCorrect++;levelHits[currentLevel]++;setFeedback("good","✅","¡Muy bien! Respondiste correctamente.")}else{setFeedback("good","👍","¡Ahora sí! Esa es la respuesta correcta. Recuerda esta pista para la próxima.")}
+        answers.push(firstTry?1:0);$("scoreTop").textContent=score;playTone("good");$("nextQuestionBtn").classList.remove("hidden");$("nextQuestionBtn").focus();speak($("feedback").textContent)}
+      else{firstTry=false;button.classList.add("wrong");button.disabled=true;setFeedback("bad","🧡",`Casi. ${item.hint} Intenta otra vez.`);playTone("bad");speak(`Casi. ${item.hint}`)}}
+    function setFeedback(type,icon,msg){$("feedback").className=`feedback ${type}`;$("feedback").innerHTML=`<span aria-hidden="true">${icon}</span><span>${esc(msg)}</span>`;$("liveRegion").textContent=msg}
+    function nextQuestion(){const level=levels[currentLevel];currentRound++;if(currentRound>=level.questions.length)finishLevel();else renderQuestion()}
+    function finishLevel(){const level=levels[currentLevel];$("levelCompleteTitle").textContent=`¡Terminaste el ${level.title.toLowerCase()}!`;$("levelCompleteText").textContent=`Acertaste ${levelCorrect} de ${level.questions.length} preguntas al primer intento.`;$("levelScoreNumber").textContent=levelScore;$("levelGoodNumber").textContent=levelCorrect;$("totalScoreNumber").textContent=score;
+      if(currentLevel===levels.length-1){$("nextLevelTip").textContent="Terminaste los tres niveles. Veamos tu resultado.";$("nextLevelBtn").textContent="🏁 Ver resultado final"}else{$("nextLevelTip").textContent=`Ahora sigue el ${levels[currentLevel+1].title.toLowerCase()}.`;$("nextLevelBtn").textContent="➡ Siguiente nivel"}
+      createConfetti(35,1800);showScreen("levelComplete");speak(`¡Felicitaciones! Acertaste ${levelCorrect} de ${level.questions.length}.`)}
+    function nextLevel(){if(currentLevel>=levels.length-1){showResults();return}currentLevel++;currentRound=0;renderLearn()}
+
+    /* ---------- resultado y resumen ---------- */
+    function recommendation(){const pcts=levels.map((l,i)=>levelHits[i]/l.questions.length);const min=Math.min(...pcts);if(min>=.9)return"Comprende muy bien la lectura. Pueden conversar en familia sobre qué plantas de nuestros antepasados usan en casa.";const weak=levels[pcts.indexOf(min)].key;
+      if(weak==="literal")return"Conviene releer el texto en casa y preguntarle: ¿qué plantas menciona la ficha?, ¿para qué se usaba cada una antes y para qué se usa ahora?";if(weak==="inferencial")return"Al leer juntos, pregúntenle “¿por qué crees que pasó esto?” y ayúdenle a buscar pistas en el texto.";return"Conversen sobre por qué es importante conservar estos saberes y pregúntenle qué opina y por qué."}
+    function showResults(){const max=totalQuestions,hits=levelHits.reduce((a,b)=>a+b,0),percent=Math.round(hits/max*100),lg=logroDe(percent);
+      const stars=percent>=90?"⭐⭐⭐":percent>=70?"⭐⭐":"⭐";const fecha=new Date();const fechaTxt=fecha.toLocaleDateString("es-PE",{day:"2-digit",month:"long",year:"numeric"});
+      $("resultTitle").textContent=`¡Terminaste, ${student.nombre.split(" ")[0]}!`;$("starsText").textContent=stars;$("logroBadge").className="logro "+lg.code;$("logroBadge").textContent=`${lg.code} · ${lg.label}`;
+      $("finalMessage").textContent=`Acertaste ${hits} de ${max} preguntas (${percent}%) al primer intento.`;levels.forEach((l,i)=>$("lvl"+i).textContent=`${levelHits[i]}/${l.questions.length}`);
+      lastSummary=`📚 Resultado de comprensión lectora
+Lectura: “${CONFIG.LECTURA}” (${CONFIG.FUENTE})
+Estudiante: ${student.nombre}
+Grado y sección: ${student.seccion}
+Fecha: ${fechaTxt}
+
+Puntaje: ${hits}/${max} (${percent}%) ${stars}
+Nivel de logro: ${lg.code} – ${lg.label}
+${levels.map((l,i)=>`• ${l.short}: ${levelHits[i]}/${l.questions.length}`).join("\n")}
+
+💡 Sugerencia para casa: ${recommendation()}`;
+      $("summaryBox").textContent=lastSummary;createConfetti(90,3500);showScreen("result");speak(`Terminaste. Acertaste ${hits} de ${max}. ${lg.label}.`);
+      saveResult({fecha:fecha.toISOString(),nombre:student.nombre,seccion:student.seccion,lectura:CONFIG.LECTURA,aciertos:hits,total:max,porcentaje:percent,logro:lg.code,literal:levelHits[0],inferencial:levelHits[1],critico:levelHits[2],respuestas:answers.join(""),duracionSeg:Math.round((Date.now()-startedAt)/1000)})}
+
+    /* ---------- guardado en Google Sheets (con cola si no hay internet) ---------- */
+    async function postResult(rec){const r=await fetch(CONFIG.SCRIPT_URL,{method:"POST",body:JSON.stringify(rec)});const j=await r.json();if(!j.ok)throw new Error(j.error||"error")}
+    async function saveResult(rec){const local=load(CONFIG.ID+"_resultados",[]);local.push(rec);store(CONFIG.ID+"_resultados",local);const st=$("saveStatus");
+      if(!CONFIG.SCRIPT_URL){st.className="save-status warn";st.textContent="⚠️ Guardado solo en este dispositivo (falta configurar Google Sheets).";return}
+      try{await postResult(rec);st.className="save-status ok";st.textContent="✅ Resultado guardado. El docente ya puede verlo.";flushPending()}
+      catch(e){const p=load(CONFIG.ID+"_pendientes",[]);p.push(rec);store(CONFIG.ID+"_pendientes",p);st.className="save-status warn";st.textContent="⚠️ Sin conexión. Se enviará automáticamente la próxima vez que se abra el juego con internet."}}
+    async function flushPending(){if(!CONFIG.SCRIPT_URL)return;const p=load(CONFIG.ID+"_pendientes",[]);if(!p.length)return;const rest=[];for(const rec of p){try{await postResult(rec)}catch(e){rest.push(rec)}}store(CONFIG.ID+"_pendientes",rest)}
+
+    /* ---------- panel docente ---------- */
+    async function loadTeacherResults(){const err=$("teacherError");err.textContent="";let rows=[];
+      if(CONFIG.SCRIPT_URL){const key=$("teacherKey").value.trim();if(!key){err.textContent="Escribe la clave del docente.";return}
+        try{const r=await fetch(CONFIG.SCRIPT_URL+"?clave="+encodeURIComponent(key)+"&lectura="+encodeURIComponent(CONFIG.LECTURA));const j=await r.json();if(!j.ok){err.textContent=j.error==="clave"?"Clave incorrecta.":"No se pudo leer la hoja.";return}rows=j.datos}
+        catch(e){err.textContent="No se pudo conectar. Revisa tu internet o la URL del script.";return}}
+      else{rows=load(CONFIG.ID+"_resultados",[]);err.textContent="Mostrando solo los resultados de este dispositivo (Google Sheets no configurado)."}
+      teacherRows=rows;const sel=$("sectionFilter"),cur=sel.value;const secs=[...new Set(rows.map(r=>String(r.seccion).toUpperCase()))].sort();sel.innerHTML='<option value="">Todas</option>'+secs.map(s=>`<option ${s===cur?"selected":""}>${esc(s)}</option>`).join("");renderTeacher()}
+    function filteredRows(){const f=$("sectionFilter").value;return teacherRows.filter(r=>!f||String(r.seccion).toUpperCase()===f)}
+    function renderTeacher(){const rows=filteredRows();$("teacherContent").classList.remove("hidden");$("stCount").textContent=rows.length;
+      const avg=rows.length?Math.round(rows.reduce((s,r)=>s+Number(r.porcentaje),0)/rows.length):0;$("stAvg").textContent=avg+"%";$("stLogro").textContent=rows.filter(r=>r.logro==="A"||r.logro==="AD").length;
+      const lvlPct=levels.map((l,i)=>rows.length?rows.reduce((s,r)=>s+Number(r[l.key]),0)/(rows.length*l.questions.length):1);$("stWeak").textContent=rows.length?levels[lvlPct.indexOf(Math.min(...lvlPct))].short:"-";
+      const all=levels.flatMap(l=>l.questions.map(q=>({q:q.q,lvl:l.short})));const stats=all.map((q,i)=>{const valid=rows.filter(r=>String(r.respuestas||"").length>i);const ok=valid.filter(r=>String(r.respuestas)[i]==="1").length;return{...q,n:i+1,pct:valid.length?Math.round(ok/valid.length*100):null}}).filter(s=>s.pct!==null).sort((a,b)=>a.pct-b.pct).slice(0,5);
+      $("questionStats").innerHTML=stats.length?stats.map(s=>`<div class="qbar"><span>P${s.n} (${s.lvl}): ${esc(s.q)}</span><span class="bar"><span style="width:${s.pct}%"></span></span><span>${s.pct}%</span></div>`).join(""):"<p>Aún no hay datos.</p>";
+      $("resultsBody").innerHTML=rows.slice().reverse().map(r=>`<tr><td>${esc(new Date(r.fecha).toLocaleDateString("es-PE"))}</td><td>${esc(r.nombre)}</td><td>${esc(r.seccion)}</td><td>${esc(r.aciertos)}/${esc(r.total)} (${esc(r.porcentaje)}%)</td><td><span class="logro ${esc(r.logro)}">${esc(r.logro)}</span></td><td>${esc(r.literal)}/${levels[0].questions.length}</td><td>${esc(r.inferencial)}/${levels[1].questions.length}</td><td>${esc(r.critico)}/${levels[2].questions.length}</td></tr>`).join("")||'<tr><td colspan="8">Aún no hay resultados.</td></tr>'}
+    function downloadCSV(){const rows=filteredRows();const head=["fecha","nombre","seccion","aciertos","total","porcentaje","logro","literal","inferencial","critico","duracionSeg"];const csv="﻿"+[head.join(";")].concat(rows.map(r=>head.map(h=>`"${String(r[h]??"").replace(/"/g,'""')}"`).join(";"))).join("\n");const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));a.download=`resultados-principe-feliz${$("sectionFilter").value?"-"+$("sectionFilter").value:""}.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)}
+    function classSummary(){const rows=filteredRows();const sec=$("sectionFilter").value||"todas las secciones";const c={AD:0,A:0,B:0,C:0};rows.forEach(r=>c[r.logro]=(c[r.logro]||0)+1);return`📊 Comprensión lectora – “${CONFIG.LECTURA}” (${sec})
+Estudiantes evaluados: ${rows.length}
+Promedio del aula: ${$("stAvg").textContent}
+AD: ${c.AD} · A: ${c.A} · B: ${c.B} · C: ${c.C}
+Nivel que más debemos reforzar: ${$("stWeak").textContent}`}
+    async function copyText(t,btn){try{await navigator.clipboard.writeText(t)}catch(e){const ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove()}const old=btn.textContent;btn.textContent="✅ Copiado";setTimeout(()=>btn.textContent=old,1600)}
+
+    function createConfetti(count,duration){const c=$("confetti");c.innerHTML="";c.classList.add("show");const colors=["#ff7a59","#ffd166","#4d96ff","#28a745","#8e7dff"];for(let i=0;i<count;i++){const p=document.createElement("span");p.style.left=Math.random()*100+"%";p.style.background=colors[Math.floor(Math.random()*colors.length)];p.style.animationDuration=1.4+Math.random()*1.8+"s";p.style.animationDelay=Math.random()*.35+"s";c.appendChild(p)}setTimeout(()=>{c.classList.remove("show");c.innerHTML=""},duration)}
+    function resetGame(){currentLevel=0;currentRound=0;score=0;levelHits=[0,0,0];answers=[];$("studentName").value="";$("studentSection").value=student.seccion;updateMainProgress();showScreen("start")}
+
+    /* ---------- eventos ---------- */
+    $("startBtn").addEventListener("click",()=>{const n=$("studentName").value.trim().replace(/\s+/g," "),s=$("studentSection").value.trim().toUpperCase();if(n.length<3){$("formError").textContent="Escribe tu nombre y apellido.";$("studentName").focus();return}if(!s){$("formError").textContent="Escribe tu grado y sección.";$("studentSection").focus();return}$("formError").textContent="";student={nombre:n,seccion:s};store(CONFIG.ID+"_ultima_seccion",s);currentLevel=0;score=0;levelHits=[0,0,0];answers=[];startedAt=Date.now();renderLearn()});
+    $("voiceTestBtn").addEventListener("click",()=>{loadVoices();speak("¡Hola! Vamos a demostrar cuánto comprendimos sobre las plantas de nuestros antepasados.")});
+    $("listenLevelBtn").addEventListener("click",()=>{const l=levels[currentLevel];speak(`${l.title}. ${l.intro}`)});
+    $("goQuizBtn").addEventListener("click",startLevelQuiz);$("repeatQuestionBtn").addEventListener("click",()=>speak(levels[currentLevel].questions[currentRound].q));
+    $("nextQuestionBtn").addEventListener("click",nextQuestion);$("nextLevelBtn").addEventListener("click",nextLevel);$("restartBtn").addEventListener("click",resetGame);
+    $("whatsappBtn").addEventListener("click",()=>window.open("https://wa.me/?text="+encodeURIComponent(lastSummary),"_blank"));
+    $("copyBtn").addEventListener("click",e=>copyText(lastSummary,e.currentTarget));$("printBtn").addEventListener("click",()=>window.print());
+    $("teacherLink").addEventListener("click",()=>{showScreen("teacher");if(!CONFIG.SCRIPT_URL)loadTeacherResults()});$("backHomeBtn").addEventListener("click",()=>showScreen("start"));
+    $("loadResultsBtn").addEventListener("click",loadTeacherResults);$("sectionFilter").addEventListener("change",renderTeacher);$("csvBtn").addEventListener("click",downloadCSV);$("copyClassBtn").addEventListener("click",e=>copyText(classSummary(),e.currentTarget));
+    document.addEventListener("keydown",e=>{if(!screens.quiz.classList.contains("active"))return;const n=Number(e.key);if(n>=1&&n<=3){const o=$("answersGrid").querySelectorAll("button")[n-1];if(o&&!o.disabled)o.click()}});
+    $("studentSection").value=load(CONFIG.ID+"_ultima_seccion","");updateMainProgress();flushPending();
+  </script>
+</body>
+</html>
